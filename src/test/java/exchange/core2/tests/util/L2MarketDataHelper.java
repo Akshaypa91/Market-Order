@@ -16,7 +16,8 @@
 package exchange.core2.tests.util;
 
 import com.google.common.base.Strings;
-import exchange.core2.core.common.L2MarketData;
+
+import Market.Order2.Order.common.L2MarketData;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;

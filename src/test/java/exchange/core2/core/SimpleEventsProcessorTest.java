@@ -1,15 +1,5 @@
 package exchange.core2.core;
 
-import exchange.core2.core.common.MatcherEventType;
-import exchange.core2.core.common.MatcherTradeEvent;
-import exchange.core2.core.common.OrderAction;
-import exchange.core2.core.common.OrderType;
-import exchange.core2.core.common.api.ApiCancelOrder;
-import exchange.core2.core.common.api.ApiPlaceOrder;
-import exchange.core2.core.common.api.ApiReduceOrder;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.cmd.OrderCommand;
-import exchange.core2.core.common.cmd.OrderCommandType;
 import lombok.extern.slf4j.Slf4j;
 import org.hamcrest.core.Is;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,6 +12,19 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import Market.Order2.Order.IEventsHandler;
+import Market.Order2.Order.SimpleEventsProcessor;
+import Market.Order2.Order.common.MatcherEventType;
+import Market.Order2.Order.common.MatcherTradeEvent;
+import Market.Order2.Order.common.OrderAction;
+import Market.Order2.Order.common.OrderType;
+import Market.Order2.Order.common.api.ApiCancelOrder;
+import Market.Order2.Order.common.api.ApiPlaceOrder;
+import Market.Order2.Order.common.api.ApiReduceOrder;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.cmd.OrderCommand;
+import Market.Order2.Order.common.cmd.OrderCommandType;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;

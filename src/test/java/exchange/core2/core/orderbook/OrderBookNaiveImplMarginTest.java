@@ -15,8 +15,10 @@
  */
 package exchange.core2.core.orderbook;
 
-import exchange.core2.core.common.CoreSymbolSpecification;
-import exchange.core2.core.common.config.LoggingConfiguration;
+import Market.Order2.Order.common.CoreSymbolSpecification;
+import Market.Order2.Order.common.config.LoggingConfiguration;
+import Market.Order2.Order.orderbook.IOrderBook;
+import Market.Order2.Order.orderbook.OrderBookNaiveImpl;
 import exchange.core2.tests.util.TestConstants;
 
 public final class OrderBookNaiveImplMarginTest extends OrderBookBaseTest {

@@ -1,23 +1,24 @@
 package exchange.core2.tests.examples;
 
-import exchange.core2.core.ExchangeApi;
-import exchange.core2.core.ExchangeCore;
-import exchange.core2.core.IEventsHandler;
-import exchange.core2.core.SimpleEventsProcessor;
-import exchange.core2.core.common.*;
-import exchange.core2.core.common.api.*;
-import exchange.core2.core.common.api.binary.BatchAddSymbolsCommand;
-import exchange.core2.core.common.api.reports.SingleUserReportQuery;
-import exchange.core2.core.common.api.reports.SingleUserReportResult;
-import exchange.core2.core.common.api.reports.TotalCurrencyBalanceReportQuery;
-import exchange.core2.core.common.api.reports.TotalCurrencyBalanceReportResult;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.config.ExchangeConfiguration;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 import org.junit.jupiter.api.Test;
+
+import Market.Order2.Order.ExchangeApi;
+import Market.Order2.Order.ExchangeCore;
+import Market.Order2.Order.IEventsHandler;
+import Market.Order2.Order.SimpleEventsProcessor;
+import Market.Order2.Order.common.*;
+import Market.Order2.Order.common.api.*;
+import Market.Order2.Order.common.api.binary.BatchAddSymbolsCommand;
+import Market.Order2.Order.common.api.reports.SingleUserReportQuery;
+import Market.Order2.Order.common.api.reports.SingleUserReportResult;
+import Market.Order2.Order.common.api.reports.TotalCurrencyBalanceReportQuery;
+import Market.Order2.Order.common.api.reports.TotalCurrencyBalanceReportResult;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.config.ExchangeConfiguration;
 
 @Slf4j
 public class ITCoreExample {

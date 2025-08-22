@@ -2,10 +2,11 @@ package exchange.core2.tests.nasdaq;
 
 import com.paritytrading.juncture.nasdaq.itch50.ITCH50Parser;
 import com.paritytrading.nassau.util.BinaryFILE;
-import exchange.core2.core.ExchangeApi;
-import exchange.core2.core.common.config.InitialStateConfiguration;
-import exchange.core2.core.common.config.PerformanceConfiguration;
-import exchange.core2.core.common.config.SerializationConfiguration;
+
+import Market.Order2.Order.ExchangeApi;
+import Market.Order2.Order.common.config.InitialStateConfiguration;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
+import Market.Order2.Order.common.config.SerializationConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.ExecutionTime;
 import exchange.core2.tests.util.TestConstants;

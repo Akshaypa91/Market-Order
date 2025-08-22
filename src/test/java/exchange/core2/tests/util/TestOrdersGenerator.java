@@ -1,14 +1,15 @@
 package exchange.core2.tests.util;
 
 import com.google.common.collect.Iterables;
-import exchange.core2.core.common.*;
-import exchange.core2.core.common.api.*;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.cmd.OrderCommand;
-import exchange.core2.core.common.cmd.OrderCommandType;
-import exchange.core2.core.common.config.LoggingConfiguration;
-import exchange.core2.core.orderbook.IOrderBook;
-import exchange.core2.core.orderbook.OrderBookNaiveImpl;
+
+import Market.Order2.Order.common.*;
+import Market.Order2.Order.common.api.*;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.cmd.OrderCommand;
+import Market.Order2.Order.common.cmd.OrderCommandType;
+import Market.Order2.Order.common.config.LoggingConfiguration;
+import Market.Order2.Order.orderbook.IOrderBook;
+import Market.Order2.Order.orderbook.OrderBookNaiveImpl;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

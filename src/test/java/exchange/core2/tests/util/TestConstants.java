@@ -1,8 +1,9 @@
 package exchange.core2.tests.util;
 
 import com.google.common.collect.Sets;
-import exchange.core2.core.common.CoreSymbolSpecification;
-import exchange.core2.core.common.SymbolType;
+
+import Market.Order2.Order.common.CoreSymbolSpecification;
+import Market.Order2.Order.common.SymbolType;
 
 import java.util.Set;
 

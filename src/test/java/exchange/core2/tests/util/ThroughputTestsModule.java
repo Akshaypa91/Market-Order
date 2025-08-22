@@ -18,12 +18,13 @@ package exchange.core2.tests.util;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import exchange.core2.core.common.config.InitialStateConfiguration;
-import exchange.core2.core.common.config.PerformanceConfiguration;
-import exchange.core2.core.common.config.SerializationConfiguration;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.stream.IntStream;
+
+import Market.Order2.Order.common.config.InitialStateConfiguration;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
+import Market.Order2.Order.common.config.SerializationConfiguration;
 
 
 @Slf4j

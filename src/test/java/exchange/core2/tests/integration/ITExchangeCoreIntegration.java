@@ -15,14 +15,6 @@
  */
 package exchange.core2.tests.integration;
 
-import exchange.core2.core.common.*;
-import exchange.core2.core.common.api.ApiAdjustUserBalance;
-import exchange.core2.core.common.api.ApiCancelOrder;
-import exchange.core2.core.common.api.ApiMoveOrder;
-import exchange.core2.core.common.api.ApiPlaceOrder;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.cmd.OrderCommandType;
-import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.L2MarketDataHelper;
 import lombok.extern.slf4j.Slf4j;
@@ -31,8 +23,17 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import org.junit.jupiter.api.Timeout;
 
-import static exchange.core2.core.common.OrderAction.ASK;
-import static exchange.core2.core.common.OrderType.GTC;
+import Market.Order2.Order.common.*;
+import Market.Order2.Order.common.api.ApiAdjustUserBalance;
+import Market.Order2.Order.common.api.ApiCancelOrder;
+import Market.Order2.Order.common.api.ApiMoveOrder;
+import Market.Order2.Order.common.api.ApiPlaceOrder;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.cmd.OrderCommandType;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
+
+import static Market.Order2.Order.common.OrderAction.ASK;
+import static Market.Order2.Order.common.OrderType.GTC;
 import static exchange.core2.tests.util.ExchangeTestContainer.CHECK_SUCCESS;
 import static exchange.core2.tests.util.TestConstants.*;
 import static org.hamcrest.MatcherAssert.assertThat;

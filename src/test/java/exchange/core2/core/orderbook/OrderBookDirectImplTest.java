@@ -15,21 +15,24 @@
  */
 package exchange.core2.core.orderbook;
 
-import exchange.core2.core.common.L2MarketData;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.cmd.OrderCommand;
-import exchange.core2.core.common.config.LoggingConfiguration;
 import exchange.core2.tests.util.TestOrdersGenerator;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
+import Market.Order2.Order.common.L2MarketData;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.cmd.OrderCommand;
+import Market.Order2.Order.common.config.LoggingConfiguration;
+import Market.Order2.Order.orderbook.IOrderBook;
+import Market.Order2.Order.orderbook.OrderBookNaiveImpl;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import static exchange.core2.core.common.OrderAction.ASK;
-import static exchange.core2.core.common.OrderAction.BID;
-import static exchange.core2.core.common.OrderType.GTC;
-import static exchange.core2.core.common.cmd.CommandResultCode.SUCCESS;
+import static Market.Order2.Order.common.OrderAction.ASK;
+import static Market.Order2.Order.common.OrderAction.BID;
+import static Market.Order2.Order.common.OrderType.GTC;
+import static Market.Order2.Order.common.cmd.CommandResultCode.SUCCESS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;

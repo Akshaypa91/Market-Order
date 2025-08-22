@@ -15,14 +15,15 @@
  */
 package exchange.core2.tests.util;
 
-import exchange.core2.core.common.api.ApiCommand;
-import exchange.core2.core.common.api.ApiPersistState;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.config.InitialStateConfiguration;
-import exchange.core2.core.common.config.PerformanceConfiguration;
-import exchange.core2.core.common.config.SerializationConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.hamcrest.core.Is;
+
+import Market.Order2.Order.common.api.ApiCommand;
+import Market.Order2.Order.common.api.ApiPersistState;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.config.InitialStateConfiguration;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
+import Market.Order2.Order.common.config.SerializationConfiguration;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;

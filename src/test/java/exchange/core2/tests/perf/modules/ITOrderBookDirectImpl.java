@@ -15,11 +15,11 @@
  */
 package exchange.core2.tests.perf.modules;
 
+import Market.Order2.Order.common.config.LoggingConfiguration;
+import Market.Order2.Order.orderbook.IOrderBook;
+import Market.Order2.Order.orderbook.OrderBookDirectImpl;
+import Market.Order2.Order.orderbook.OrderBookEventsHelper;
 import exchange.core2.collections.objpool.ObjectsPool;
-import exchange.core2.core.common.config.LoggingConfiguration;
-import exchange.core2.core.orderbook.IOrderBook;
-import exchange.core2.core.orderbook.OrderBookDirectImpl;
-import exchange.core2.core.orderbook.OrderBookEventsHelper;
 import exchange.core2.tests.util.TestConstants;
 
 public class ITOrderBookDirectImpl extends ITOrderBookBase {

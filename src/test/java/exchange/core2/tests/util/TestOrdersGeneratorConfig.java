@@ -1,6 +1,5 @@
 package exchange.core2.tests.util;
 
-import exchange.core2.core.common.CoreSymbolSpecification;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -8,6 +7,8 @@ import lombok.Getter;
 import java.util.BitSet;
 import java.util.List;
 import java.util.function.Function;
+
+import Market.Order2.Order.common.CoreSymbolSpecification;
 
 @AllArgsConstructor
 @Builder

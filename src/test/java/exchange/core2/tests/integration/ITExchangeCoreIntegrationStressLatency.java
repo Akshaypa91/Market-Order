@@ -1,6 +1,6 @@
 package exchange.core2.tests.integration;
 
-import exchange.core2.core.common.config.PerformanceConfiguration;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
 
 public class ITExchangeCoreIntegrationStressLatency extends ITExchangeCoreIntegrationStress {
 

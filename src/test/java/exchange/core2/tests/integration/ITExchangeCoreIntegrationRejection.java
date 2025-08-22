@@ -15,14 +15,6 @@
  */
 package exchange.core2.tests.integration;
 
-import exchange.core2.core.IEventsHandler;
-import exchange.core2.core.SimpleEventsProcessor;
-import exchange.core2.core.common.CoreSymbolSpecification;
-import exchange.core2.core.common.OrderAction;
-import exchange.core2.core.common.OrderType;
-import exchange.core2.core.common.api.ApiPlaceOrder;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import lombok.extern.slf4j.Slf4j;
 import org.hamcrest.core.Is;
@@ -37,9 +29,18 @@ import org.mockito.Mock;
 import java.util.List;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static exchange.core2.core.common.OrderAction.ASK;
-import static exchange.core2.core.common.OrderAction.BID;
-import static exchange.core2.core.common.OrderType.*;
+import Market.Order2.Order.IEventsHandler;
+import Market.Order2.Order.SimpleEventsProcessor;
+import Market.Order2.Order.common.CoreSymbolSpecification;
+import Market.Order2.Order.common.OrderAction;
+import Market.Order2.Order.common.OrderType;
+import Market.Order2.Order.common.api.ApiPlaceOrder;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
+
+import static Market.Order2.Order.common.OrderAction.ASK;
+import static Market.Order2.Order.common.OrderAction.BID;
+import static Market.Order2.Order.common.OrderType.*;
 import static exchange.core2.tests.integration.ITExchangeCoreIntegrationRejection.RejectionCause.*;
 import static exchange.core2.tests.util.TestConstants.*;
 import static org.hamcrest.MatcherAssert.assertThat;

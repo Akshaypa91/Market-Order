@@ -2,7 +2,6 @@ package exchange.core2.tests;
 
 import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
-import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.steps.OrderStepdefs;
 import io.cucumber.plugin.EventListener;
 import io.cucumber.plugin.event.EventPublisher;
@@ -15,6 +14,8 @@ import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;
 import org.junit.platform.suite.api.SelectClasspathResources;
 import org.junit.platform.suite.api.Suite;
+
+import Market.Order2.Order.common.config.PerformanceConfiguration;
 
 @Suite
 @IncludeEngines("cucumber")

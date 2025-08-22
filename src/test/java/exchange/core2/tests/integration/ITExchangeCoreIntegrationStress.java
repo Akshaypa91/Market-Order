@@ -15,11 +15,6 @@
  */
 package exchange.core2.tests.integration;
 
-import exchange.core2.core.ExchangeApi;
-import exchange.core2.core.common.CoreSymbolSpecification;
-import exchange.core2.core.common.L2MarketData;
-import exchange.core2.core.common.api.ApiCommand;
-import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.TestOrdersGenerator;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +28,12 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.Timeout;
+
+import Market.Order2.Order.ExchangeApi;
+import Market.Order2.Order.common.CoreSymbolSpecification;
+import Market.Order2.Order.common.L2MarketData;
+import Market.Order2.Order.common.api.ApiCommand;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
 
 import static exchange.core2.tests.util.TestConstants.SYMBOLSPEC_ETH_XBT;
 import static exchange.core2.tests.util.TestConstants.SYMBOLSPEC_EUR_USD;

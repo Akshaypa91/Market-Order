@@ -15,9 +15,9 @@
  */
 package exchange.core2.tests.perf.modules;
 
-import exchange.core2.core.common.config.LoggingConfiguration;
-import exchange.core2.core.orderbook.IOrderBook;
-import exchange.core2.core.orderbook.OrderBookNaiveImpl;
+import Market.Order2.Order.common.config.LoggingConfiguration;
+import Market.Order2.Order.orderbook.IOrderBook;
+import Market.Order2.Order.orderbook.OrderBookNaiveImpl;
 import exchange.core2.tests.util.TestConstants;
 
 public class ITOrderBookNaiveImpl extends ITOrderBookBase {

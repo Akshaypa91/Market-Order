@@ -8,22 +8,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import exchange.core2.core.common.CoreSymbolSpecification;
-import exchange.core2.core.common.MatcherEventType;
-import exchange.core2.core.common.MatcherTradeEvent;
-import exchange.core2.core.common.Order;
-import exchange.core2.core.common.OrderAction;
-import exchange.core2.core.common.OrderType;
-import exchange.core2.core.common.api.ApiAddUser;
-import exchange.core2.core.common.api.ApiAdjustUserBalance;
-import exchange.core2.core.common.api.ApiCancelOrder;
-import exchange.core2.core.common.api.ApiCommand;
-import exchange.core2.core.common.api.ApiMoveOrder;
-import exchange.core2.core.common.api.ApiPlaceOrder;
-import exchange.core2.core.common.api.reports.SingleUserReportResult;
-import exchange.core2.core.common.cmd.CommandResultCode;
-import exchange.core2.core.common.cmd.OrderCommandType;
-import exchange.core2.core.common.config.PerformanceConfiguration;
 import exchange.core2.tests.util.ExchangeTestContainer;
 import exchange.core2.tests.util.L2MarketDataHelper;
 import exchange.core2.tests.util.TestConstants;
@@ -36,6 +20,23 @@ import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+
+import Market.Order2.Order.common.CoreSymbolSpecification;
+import Market.Order2.Order.common.MatcherEventType;
+import Market.Order2.Order.common.MatcherTradeEvent;
+import Market.Order2.Order.common.Order;
+import Market.Order2.Order.common.OrderAction;
+import Market.Order2.Order.common.OrderType;
+import Market.Order2.Order.common.api.ApiAddUser;
+import Market.Order2.Order.common.api.ApiAdjustUserBalance;
+import Market.Order2.Order.common.api.ApiCancelOrder;
+import Market.Order2.Order.common.api.ApiCommand;
+import Market.Order2.Order.common.api.ApiMoveOrder;
+import Market.Order2.Order.common.api.ApiPlaceOrder;
+import Market.Order2.Order.common.api.reports.SingleUserReportResult;
+import Market.Order2.Order.common.cmd.CommandResultCode;
+import Market.Order2.Order.common.cmd.OrderCommandType;
+import Market.Order2.Order.common.config.PerformanceConfiguration;
 
 @Slf4j
 public class OrderStepdefs implements En {

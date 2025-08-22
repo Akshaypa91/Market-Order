@@ -1,11 +1,12 @@
 package exchange.core2.tests.util;
 
-import exchange.core2.core.common.CoreSymbolSpecification;
-import exchange.core2.core.common.SymbolType;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.math3.distribution.ParetoDistribution;
 import org.apache.commons.math3.distribution.RealDistribution;
 import org.apache.commons.math3.random.JDKRandomGenerator;
+
+import Market.Order2.Order.common.CoreSymbolSpecification;
+import Market.Order2.Order.common.SymbolType;
 
 import java.util.*;
 
